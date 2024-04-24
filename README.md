@@ -1,46 +1,27 @@
-# Getting Started with Create React App
+Instructions on how to build and run the solution
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Clone the Repo to your local computer
 
-## Available Scripts
+In terminal / git bash/ other command line interfaces, make your way to the folder
+Tuum_test_2024_spring
 
-In the project directory, you can run:
+First, make sure you have Node and NPM downloaded, you can check it using 'npm --version' (or node --version)
+If not, you can do it here: https://nodejs.org/en/ 
 
-### `npm start`
+Now you can run in terminal:
+'npm install react-scripts'
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+and finally run:
+'npm start'
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+The application should be running.
 
-### `npm test`
+###Explanation of important choices for implementation and technologies in the solution
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+I decided to use React and Typescript. For the main part, it is pretty straight-forward using basic css and html, just combined with Typescript. For adding the flags, I decided to use react-flags-select to display the countries and flags. I chose it because it was already made and was easy to implement. The downside was that I couldn't manage to change the 'Country' input field style to match the others.
 
-### `npm run build`
+###Analysis on what impacts your bundle size the most and what you’ve done (or can do) to
+optimise it’
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+One thing that certainly impacts my bundle size is the use of big libraries like react. To make the bundle smaller, I tried to use only specific parts of the library. I also tried to avoid code duplication, for example in css files. Another factor contributing	to the bundle size may be the react-flags-select module. It may be possible to just use parts of it swell to avoid importing it whole. One way to make the bundle smaller would also to choose just a few countries and flags and just a smaller selection from there. 
