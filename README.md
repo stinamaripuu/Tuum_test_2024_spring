@@ -16,7 +16,7 @@ and finally run:
 
 The application should be running.
 
-## Explanation of important choices for implementation and technologies in the solution###
+## Explanation of important choices for implementation and technologies in the solution
 
 I decided to use React and Typescript. For the main part, it is pretty straight-forward using basic css and html, just combined with Typescript. For adding the flags, I decided to use react-flags-select to display the countries and flags. I chose it because it was already made and was easy to implement. The downside was that I couldn't manage to change the 'Country' input field style to match the others.
 
