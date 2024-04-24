@@ -1,0 +1,45 @@
+body {
+  font-family: serif;
+  background: #a7d0d8;
+  padding: 0; /* Ensure no padding interferes with centering */
+  margin: 0; /* Remove default margin */
+  height: 100vh; /* Full viewport height */
+  display: flex; /* Make the body a flex container */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+}
+
+.conteiner {
+  display: flex;
+  justify-content: center; /* Centers children horizontally inside the container */
+  align-items: center; /* Centers children vertically */
+  flex-wrap: wrap; /* Allows child elements to wrap if space requires */
+  max-width: 1200px; /* Maximum width of the container */
+  width: 100%; /* Full width */
+}
+
+.contacts {
+  flex: 1; /* Flex grow to take available space */
+  margin: 20px; /* Adjust margin as needed */
+  color: #333;
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 5px;
+  font-weight: 200;
+  /* padding-bottom: 20px; */
+}
+
+a {
+  color: #333;
+}
+
+.formBox {
+  flex: 2; /* Takes twice the space of contacts, adjust as needed */
+  background: white;
+  padding: 1%;
+  border-radius: 40px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 20px; /* Consistent margin for alignment */
+}
